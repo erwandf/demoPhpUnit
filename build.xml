@@ -15,7 +15,7 @@
 
   <!-- PHPUnit -->
   <exec dir="src" executable="phpunit" failonerror="true">
-   <arg line="--log-junit reports/phpunit.xml ../test/CalculatorTest"/>
+   <arg line="--log-junit ../reports/phpunit.xml ../test/CalculatorTest.php"/>
   </exec>
 
 </target>
