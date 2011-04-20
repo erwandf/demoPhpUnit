@@ -1,7 +1,7 @@
 <?php
 require_once 'PHPUnit/Framework.php';
 
-require_once '/home/erwan/workspace/github/demoPhpUnit/Calculator.php';
+require_once '../src/Calculator.php';
 
 /**
  * Test class for Calculator.

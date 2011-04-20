@@ -14,7 +14,9 @@
   <mkdir dir="reports/coverage"/>
 
   <!-- PHPUnit -->
-  <exec command="phpunit --log-junit reports/phpunit.xml  test/CalculatorTest.php"/>
+  <exec dir="src" executable="phpunit" failonerror="true">
+   <arg line="--log-junit reports/phpunit.xml ../test/CalculatorTest"/>
+  </exec>
 
 </target>
 </project>
