@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="demoPhpUnit" basedir="." default="main">
+<property name="tmp" value="/tmp" />
+<property name="wsname" value="src" />
+<property name="package"  value="${phing.project.name}"/>
+<property name="builddir" value="${tmp}/build/${phing.project.name}" />
+<property name="srcdir"   value="./src/" />
+
+<!-- Main Target -->
+<target name="main" description="main target">
+
+  <!-- Create dirs -->
+  <mkdir dir="${builddir}/reports"/>
+  <mkdir dir="${builddir}/reports/coverage"/>
+
+  <!-- PHPUnit -->
+  <exec command="phpunit --log-junit ${builddir}/reports/phpunit.xml  test/CalculatorTest.php"/>
+
+</target>
+</project>
+
