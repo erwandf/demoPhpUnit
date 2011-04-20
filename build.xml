@@ -18,6 +18,10 @@
    <arg line="--log-junit ../reports/phpunit.xml ../test/CalculatorTest.php"/>
   </exec>
 
+  <!-- coverage -->
+  <exec dir="src" executable="phpunit" failonerror="true">
+   <arg line="--coverage-clover ../reports/coverage/ ../test/CalculatorTest.php"/>
+  </exec>
 </target>
 </project>
 
