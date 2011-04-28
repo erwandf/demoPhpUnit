@@ -12,16 +12,23 @@
   <!-- Create dirs -->
   <mkdir dir="reports"/>
   <mkdir dir="reports/coverage"/>
+  <mkdir dir="reports/htmlcoverage"/>
 
   <!-- PHPUnit -->
   <exec dir="src" executable="phpunit" failonerror="true">
    <arg line="--log-junit ../reports/phpunit.xml ../test/"/>
   </exec>
 
-  <!-- coverage -->
+  <!-- clover coverage -->
   <exec dir="src" executable="phpunit" failonerror="true">
    <arg line="--coverage-clover ../reports/coverage/clover.xml ../test/"/>
   </exec>
+
+  <!-- HTML coverage included in phpunit -->
+  <exec dir="src" executable="phpunit" failonerror="true">
+   <arg line="--coverage-html ../report/htmlcoverage ../test/"/>
+  </exec>
+
 </target>
 </project>
 
