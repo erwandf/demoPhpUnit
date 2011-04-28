@@ -15,12 +15,12 @@
 
   <!-- PHPUnit -->
   <exec dir="src" executable="phpunit" failonerror="true">
-   <arg line="--log-junit ../reports/phpunit.xml ../test/CalculatorTest.php"/>
+   <arg line="--log-junit ../reports/phpunit.xml ../test/"/>
   </exec>
 
   <!-- coverage -->
   <exec dir="src" executable="phpunit" failonerror="true">
-   <arg line="--coverage-clover ../reports/coverage/clover.xml ../test/CalculatorTest.php"/>
+   <arg line="--coverage-clover ../reports/coverage/clover.xml ../test/"/>
   </exec>
 </target>
 </project>
