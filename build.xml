@@ -26,7 +26,7 @@
 
   <!-- HTML coverage included in phpunit -->
   <exec dir="src" executable="phpunit" failonerror="true">
-   <arg line="--coverage-html ../report/htmlcoverage ../test/"/>
+   <arg line="--coverage-html ../reports/htmlcoverage ../test/"/>
   </exec>
 
 </target>
