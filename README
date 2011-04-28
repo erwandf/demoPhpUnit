@@ -1,2 +1,5 @@
 demo for using phpunit, git and jenkins
-taken from http://luhman.org/blog/2009/12/16/installing-hudson-phing-phpunit-and-git-ubuntu
+
+taken from 
+* http://luhman.org/blog/2009/12/16/installing-hudson-phing-phpunit-and-git-ubuntu
+* http://www.slideshare.net/hhamon/intgration-continue-des-projets-php-avec-jenkins
